@@ -1,0 +1,161 @@
+2015-04-10 14:09:51 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\UrlManager::addRules()' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2-debug/Module.php(135): yii\base\Component->__call('addRules', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2-debug/Module.php(135): yii\web\UrlManager->addRules(Array, false)
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(294): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(62): yii\base\Application->bootstrap()
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(251): yii\web\Application->bootstrap()
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Object.php(106): yii\base\Application->init()
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(190): yii\base\Object->__construct(Array)
+#7 /home/dusty/sites/yii2/backend/web/index.php(17): yii\base\Application->__construct(Array)
+#8 {main}
+2015-04-10 14:09:51 [127.0.0.1][-][-][info][application] $_SERVER = array (
+  'HTTP_HOST' => 'yii2.back',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:37.0) Gecko/20100101 Firefox/37.0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+  'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.back Port 80</address>
+',
+  'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+  'SERVER_NAME' => 'yii2.back',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/backend/web/',
+  'REQUEST_SCHEME' => 'http',
+  'CONTEXT_PREFIX' => '',
+  'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/backend/web/',
+  'SERVER_ADMIN' => '[no address given]',
+  'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/backend/web/index.php',
+  'REMOTE_PORT' => '35867',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'GET',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/',
+  'SCRIPT_NAME' => '/index.php',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1428674990.9949999,
+  'REQUEST_TIME' => 1428674990,
+)
+2015-04-10 22:21:04 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.user' doesn't exist' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/Command.php:820
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/Command.php(820): PDOStatement->execute()
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetch', NULL)
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#5 /home/dusty/sites/yii2/common/models/User.php(82): yii\db\BaseActiveRecord::findOne(Array)
+#6 /home/dusty/sites/yii2/common/models/LoginForm.php(73): common\models\User::findByUsername('admin')
+#7 /home/dusty/sites/yii2/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#9 /home/dusty/sites/yii2/vendor/yiisoft/yii2/validators/InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#10 /home/dusty/sites/yii2/vendor/yiisoft/yii2/validators/Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#11 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#12 /home/dusty/sites/yii2/common/models/LoginForm.php(58): yii\base\Model->validate()
+#13 /home/dusty/sites/yii2/backend/controllers/SiteController.php(68): common\models\LoginForm->login()
+#14 [internal function]: backend\controllers\SiteController->actionLogin()
+#15 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#18 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/login', Array)
+#19 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /home/dusty/sites/yii2/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.user' doesn't exist
+The SQL being executed was: SELECT * FROM `user` WHERE (`username`='admin') AND (`status`=10)' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/Schema.php:565
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/Command.php(835): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetch', NULL)
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#5 /home/dusty/sites/yii2/common/models/User.php(82): yii\db\BaseActiveRecord::findOne(Array)
+#6 /home/dusty/sites/yii2/common/models/LoginForm.php(73): common\models\User::findByUsername('admin')
+#7 /home/dusty/sites/yii2/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#9 /home/dusty/sites/yii2/vendor/yiisoft/yii2/validators/InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#10 /home/dusty/sites/yii2/vendor/yiisoft/yii2/validators/Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#11 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#12 /home/dusty/sites/yii2/common/models/LoginForm.php(58): yii\base\Model->validate()
+#13 /home/dusty/sites/yii2/backend/controllers/SiteController.php(68): common\models\LoginForm->login()
+#14 [internal function]: backend\controllers\SiteController->actionLogin()
+#15 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#18 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/login', Array)
+#19 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /home/dusty/sites/yii2/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii2.user' doesn't exist
+)
+
+2015-04-10 22:21:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'X29ydkpWYmYAPwIaCRsVMz4jGTsCNRYCKyw/JmcmNxwqWDM7KyQnPA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'be46b1e0104b6a23f2bcebfb5b5a5506099fb9b5796eff9b02dbaf496e296999a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_PplCMwUaLkMHctdtCMP-pUzu7AMarEZ\";}'
+    'PHPSESSID' => '4pg6kr4bv2mf0qpft0mt2le1t7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.back'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.back/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_csrf=be46b1e0104b6a23f2bcebfb5b5a5506099fb9b5796eff9b02dbaf496e296999a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_PplCMwUaLkMHctdtCMP-pUzu7AMarEZ%22%3B%7D; PHPSESSID=4pg6kr4bv2mf0qpft0mt2le1t7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '198'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.back Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.back'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/backend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '51521'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1428704464.004
+    'REQUEST_TIME' => 1428704464
+]
