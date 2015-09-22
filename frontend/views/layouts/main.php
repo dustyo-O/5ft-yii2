@@ -10,67 +10,52 @@ use frontend\widgets\Alert;
 /* @var $content string */
 
 AppAsset::register($this);
+//var_dump($anek);
 ?>
 <?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?= Yii::$app->language ?>" lang="<?= Yii::$app->language ?>">
 <head>
-    <meta charset="<?= Yii::$app->charset ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= $this->title; ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=<?= Yii::$app->charset ?>"/>
+    <link title="" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/5ft/"/>
     <?php $this->head() ?>
 </head>
 <body>
     <?php $this->beginBody() ?>
-    <div class="wrap">
-        <?php
-            NavBar::begin([
-                'brandLabel' => 'My Company',
-                'brandUrl' => Yii::$app->homeUrl,
-                'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
-                ],
-            ]);
-            $menuItems = [
-                ['label' => 'Home', 'url' => ['/site/index']],
-                ['label' => 'About', 'url' => ['/site/about']],
-                ['label' => 'Contact', 'url' => ['/site/contact']],
-            ];
-            if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-            } else {
-                $menuItems[] = [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
-            }
-            echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
-                'items' => $menuItems,
-            ]);
-            NavBar::end();
-        ?>
 
-        <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
-        </div>
-    </div>
 
-    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>
 
     <?php $this->endBody() ?>
+    <!--LiveInternet counter--><script type="text/javascript"><!--
+        document.write("<a href='http://www.liveinternet.ru/click' "+
+        "target=_blank><img src='http://counter.yadro.ru/hit?t44.6;r"+
+        escape(document.referrer)+((typeof(screen)=="undefined")?"":
+        ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+        ";"+Math.random()+
+        "' alt='' title='LiveInternet' "+
+        "border='0' width='31' height='31'><\/a>")
+        //--></script><!--/LiveInternet--><script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-11316606-1");
+            pageTracker._trackPageview();
+        } catch(err) {}</script>
+    <!-- Yandex.Metrika -->
+    <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        try { var yaCounter395300 = new Ya.Metrika(395300); } catch(e){}
+    </script>
+    <noscript><div style="position: absolute;"><img src="//mc.yandex.ru/watch/395300" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika -->
+
 </body>
 </html>
 <?php $this->endPage() ?>

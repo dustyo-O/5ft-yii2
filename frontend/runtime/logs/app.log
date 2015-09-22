@@ -3717,3 +3717,2678 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1441999002.577
     'REQUEST_TIME' => 1441999002
 ]
+2015-09-22 08:40:35 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\View::keywords' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/views/layouts/main.php(21): yii\base\Component->__get('keywords')
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(325): require('/home/dusty/sit...')
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/dusty/sit...', Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/home/dusty/sit...', Array, Object(frontend\controllers\SiteController))
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#5 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#10 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#11 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-09-22 08:40:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36743'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442911235.022
+    'REQUEST_TIME' => 1442911235
+]
+2015-09-22 08:54:30 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:54:30 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36911'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912070.127
+    'REQUEST_TIME' => 1442912070
+]
+2015-09-22 08:54:47 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:54:47 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36914'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912087.006
+    'REQUEST_TIME' => 1442912087
+]
+2015-09-22 08:54:47 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:54:47 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36915'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912087.595
+    'REQUEST_TIME' => 1442912087
+]
+2015-09-22 08:54:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:54:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36916'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912088.131
+    'REQUEST_TIME' => 1442912088
+]
+2015-09-22 08:54:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:54:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36917'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912088.37
+    'REQUEST_TIME' => 1442912088
+]
+2015-09-22 08:54:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:54:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912088.584
+    'REQUEST_TIME' => 1442912088
+]
+2015-09-22 08:54:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:54:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36919'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912088.767
+    'REQUEST_TIME' => 1442912088
+]
+2015-09-22 08:54:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:54:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '36920'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912088.966
+    'REQUEST_TIME' => 1442912088
+]
+2015-09-22 08:58:40 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:58:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37128'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912320.356
+    'REQUEST_TIME' => 1442912320
+]
+2015-09-22 08:58:41 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:58:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37129'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912321.396
+    'REQUEST_TIME' => 1442912321
+]
+2015-09-22 08:58:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 08:58:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37130'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912322.411
+    'REQUEST_TIME' => 1442912322
+]
+2015-09-22 09:00:00 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'title'' in /home/dusty/sites/yii2/frontend/views/layouts/main.php:19
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/views/layouts/main.php(19): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/home/dusty/sit...', 19, Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(325): require('/home/dusty/sit...')
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/dusty/sit...', Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/home/dusty/sit...', Array, Object(frontend\controllers\SiteController))
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('?    <div class...')
+#5 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(79): yii\base\Controller->render('anek', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#10 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#11 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-09-22 09:00:00 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37136'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912400.609
+    'REQUEST_TIME' => 1442912400
+]
+2015-09-22 09:00:25 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'title'' in /home/dusty/sites/yii2/frontend/views/layouts/main.php:19
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/views/layouts/main.php(19): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/home/dusty/sit...', 19, Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(325): require('/home/dusty/sit...')
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/dusty/sit...', Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/home/dusty/sit...', Array, Object(frontend\controllers\SiteController))
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('?    <div class...')
+#5 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(81): yii\base\Controller->render('anek', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#10 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#11 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-09-22 09:00:25 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37147'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912425.071
+    'REQUEST_TIME' => 1442912425
+]
+2015-09-22 09:00:26 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'title'' in /home/dusty/sites/yii2/frontend/views/layouts/main.php:19
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/views/layouts/main.php(19): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/home/dusty/sit...', 19, Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(325): require('/home/dusty/sit...')
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/dusty/sit...', Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/home/dusty/sit...', Array, Object(frontend\controllers\SiteController))
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('?    <div class...')
+#5 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(81): yii\base\Controller->render('anek', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#10 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#11 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-09-22 09:00:26 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912426.049
+    'REQUEST_TIME' => 1442912426
+]
+2015-09-22 09:00:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:76
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(76): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 76, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 09:00:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37156'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912448.132
+    'REQUEST_TIME' => 1442912448
+]
+2015-09-22 09:01:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 09:01:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37167'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912504.255
+    'REQUEST_TIME' => 1442912504
+]
+2015-09-22 09:01:47 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 09:01:47 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37169'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912507.188
+    'REQUEST_TIME' => 1442912507
+]
+2015-09-22 09:01:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 09:01:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37171'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912508.489
+    'REQUEST_TIME' => 1442912508
+]
+2015-09-22 09:07:56 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /home/dusty/sites/yii2/frontend/controllers/SiteController.php:74
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(74): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/dusty/sit...', 74, Array)
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 09:07:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37281'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912876.036
+    'REQUEST_TIME' => 1442912876
+]
+2015-09-22 09:08:10 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Aneks::meta' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('meta')
+#1 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(77): yii\db\BaseActiveRecord->__get('meta')
+#2 [internal function]: frontend\controllers\SiteController->actionIndex()
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#7 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-09-22 09:08:10 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37285'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912890.293
+    'REQUEST_TIME' => 1442912890
+]
+2015-09-22 09:09:17 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: frontend\controllers\SiteController::title' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(77): yii\base\Component->__set('title', '?????????????? ...')
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 09:09:17 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37289'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912957.136
+    'REQUEST_TIME' => 1442912957
+]
+2015-09-22 09:09:18 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: frontend\controllers\SiteController::title' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(77): yii\base\Component->__set('title', '?????????????? ...')
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#5 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#6 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-09-22 09:09:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.5.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.5.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442912958.137
+    'REQUEST_TIME' => 1442912958
+]
+2015-09-22 09:24:05 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: anek' in /home/dusty/sites/yii2/frontend/views/layouts/main.php:13
+Stack trace:
+#0 /home/dusty/sites/yii2/frontend/views/layouts/main.php(13): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/dusty/sit...', 13, Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(325): require('/home/dusty/sit...')
+#2 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/dusty/sit...', Array)
+#3 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/home/dusty/sit...', Array, Object(frontend\controllers\SiteController))
+#4 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('?    <div class...')
+#5 /home/dusty/sites/yii2/frontend/controllers/SiteController.php(84): yii\base\Controller->render('anek', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#10 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#11 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-09-22 09:24:05 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmb' => '191252642.10.10.1442911270'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmt' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2.front/index.php?r=debug%2Fdefault%2Fview&panel=db&tag=5600f685dd8fb'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmb=191252642.10.10.1442911270; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '37642'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442913845.919
+    'REQUEST_TIME' => 1442913845
+]
+2015-09-22 10:11:54 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "SiteController/actionIndex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('SiteController/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:11:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442911270.1'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442911270.1; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38468'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916714.161
+    'REQUEST_TIME' => 1442916714
+]
+2015-09-22 10:12:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "SiteController/actionIndex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('SiteController/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:12:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.2.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.2.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38473'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916725.436
+    'REQUEST_TIME' => 1442916725
+]
+2015-09-22 10:12:24 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "SiteController/actionIndex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('SiteController/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:12:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.3.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.3.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38476'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916744.835
+    'REQUEST_TIME' => 1442916744
+]
+2015-09-22 10:12:26 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "SiteController/actionIndex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('SiteController/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:12:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.4.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.4.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38476'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916746.004
+    'REQUEST_TIME' => 1442916746
+]
+2015-09-22 10:12:46 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "SiteController/actionIndex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('SiteController/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:12:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.5.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.5.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38481'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916766.028
+    'REQUEST_TIME' => 1442916766
+]
+2015-09-22 10:12:58 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324.html".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324.html', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:12:58 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.6.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.6.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38483'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916778.949
+    'REQUEST_TIME' => 1442916778
+]
+2015-09-22 10:13:01 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324.html".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324.html', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:13:01 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.7.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.7.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38483'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916781.084
+    'REQUEST_TIME' => 1442916781
+]
+2015-09-22 10:13:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324.html".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324.html', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:13:05 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.8.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.8.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38483'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916785.484
+    'REQUEST_TIME' => 1442916785
+]
+2015-09-22 10:13:07 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324.html".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324.html', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:13:07 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.9.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.9.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38484'
+    'REDIRECT_URL' => '/a/34324.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916787.005
+    'REQUEST_TIME' => 1442916787
+]
+2015-09-22 10:14:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:14:05 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.10.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.10.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38494'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916845.092
+    'REQUEST_TIME' => 1442916845
+]
+2015-09-22 10:14:19 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "SiteController/actionIndex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('SiteController/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:14:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.11.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.11.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38497'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916859.118
+    'REQUEST_TIME' => 1442916859
+]
+2015-09-22 10:14:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "SiteController/actionIndex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('SiteController/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:14:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.12.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.12.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38497'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916860.436
+    'REQUEST_TIME' => 1442916860
+]
+2015-09-22 10:15:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sitecontroller/actionindex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('sitecontroller/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:15:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.13.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.13.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38507'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916902.349
+    'REQUEST_TIME' => 1442916902
+]
+2015-09-22 10:15:03 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sitecontroller/actionindex".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('sitecontroller/...', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:15:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '34324'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.14.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.14.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38507'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442916903.364
+    'REQUEST_TIME' => 1442916903
+]
+2015-09-22 10:16:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:16:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.15.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.15.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38513'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442917004.171
+    'REQUEST_TIME' => 1442917004
+]
+2015-09-22 10:16:45 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:16:45 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.16.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.16.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38513'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442917005.332
+    'REQUEST_TIME' => 1442917005
+]
+2015-09-22 10:16:46 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:16:46 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.17.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.17.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38513'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442917006.891
+    'REQUEST_TIME' => 1442917006
+]
+2015-09-22 10:16:47 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:16:47 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.18.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.18.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38513'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442917007.52
+    'REQUEST_TIME' => 1442917007
+]
+2015-09-22 10:16:48 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:16:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.18.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.18.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38513'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442917008.001
+    'REQUEST_TIME' => 1442917008
+]
+2015-09-22 10:16:48 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:16:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.18.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.18.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38514'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442917008.01
+    'REQUEST_TIME' => 1442917008
+]
+2015-09-22 10:16:48 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "a/34324".' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('a/34324', Array)
+#1 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dusty/sites/yii2/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/dusty/sites/yii2/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dusty/sites/yii2/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 10:16:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r8qmg5hio0ivl9he7ebqf1n6n0'
+    '_csrf' => 'f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF\";}'
+    '__utma' => '191252642.1940721514.1442911270.1442911270.1442916715.2'
+    '__utmc' => '191252642'
+    '__utmz' => '191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmb' => '191252642.18.10.1442916715'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.front'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r8qmg5hio0ivl9he7ebqf1n6n0; _csrf=f4b78deae2e830e91dc7ca7fabbf5f08f1e097ce75f90479683c153397222fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hzOFz1lLNe9aKpUfSyZZNVgbhYXZdWrF%22%3B%7D; __utma=191252642.1940721514.1442911270.1442911270.1442916715.2; __utmc=191252642; __utmz=191252642.1442911270.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmb=191252642.18.10.1442916715; __utmt=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2.front Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'yii2.front'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dusty/sites/yii2/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/dusty/sites/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '38514'
+    'REDIRECT_URL' => '/a/34324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/a/34324'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1442917008.083
+    'REQUEST_TIME' => 1442917008
+]

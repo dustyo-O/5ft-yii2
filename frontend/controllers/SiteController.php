@@ -21,6 +21,7 @@ class SiteController extends Controller
 {
 
     public $content;
+    public $title;
     /**
      * @inheritdoc
      */
@@ -70,12 +71,17 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+        $anekid = Yii::$app->request->get('id');
         $anek = new Aneks();
-        $anek_text = $anek->getAnekByID(83322)[0];
+        $anek_text = $anek->get_anek($anekid);
+
+//        $anek_text = $anek_text[0];
+
+        //$this->getView()->title = $anek->get_title();
 
         //$this->content = $anek_text;
-        return $this->render('index', [
-        'content' => $anek_text,
+        return $this->render('anek', [
+        'anek' => $anek_text,
             ]);
     }
 

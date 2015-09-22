@@ -12,6 +12,7 @@ use yii\db\ActiveRecord;
 
 /**
  * Anek is base class of application
+ * TODO обрабатывать забаненные анекдоты
  */
 class Aneks extends ActiveRecord
 {
@@ -23,13 +24,20 @@ class Aneks extends ActiveRecord
         if ()
     }*/
 
-    public function getAnekByID($id = 0){
+    public function get_title()
+    {
+        return $this->meta['title'];
+    }
+
+    public function get_anek($id = 0){
         $this->meta = array(
             "title" => '',
             "description" => '',
             "keywords" => '',
             "h1" => ''
         );
+
+
         if($id){
             //$query = "SELECT id, text, rate FROM aneks WHERE id = ".$id;
             $res = Aneks::find()
@@ -42,7 +50,7 @@ class Aneks extends ActiveRecord
                 //$row = mysql_fetch_assoc($res);
 
                 $row = array();
-                $row['text'] = $res->text;
+                $row['text'] = str_replace("\r\n","<br/>\n",$res->text);
                 $row['rate'] = $res->rate;
                 $row['id'] = $res->id;
 
@@ -103,17 +111,19 @@ class Aneks extends ActiveRecord
 
                 }
                 $this->meta['title'] = 'Анекдот '. $this->meta['title'] . ' - 5ft.ru';
-                $this->meta['description']  = str_replace("%cat%", ' - анекдот #'.$row['id'], $this->meta['description']);
+                $this->meta['description']  = 'Читайте анекдот: '. $this->meta['title'] .'...';
                 //$this->meta['title']        = str_replace("%cat%", ' - анекдот #'.$row['id'], $this->meta['title']);
-                $this->meta['h1']           = str_replace("%cat%", ' - анекдот #'.$row['id'], $this->meta['h1']);
+                $this->meta['h1']           = 'Анекдот #'.$row['id'];
                 //$randPortion = $this->getRandomAnek(2);
 
-                $result = array();
-                $result[] = $row;
+              //  $result = array();
+                //$result[] = $row;
+                $result = array_merge($row,$this->meta);
+
                 /*foreach($randPortion as $k=>$v){
                     $result[] = $v;
                 }*/
-
+                // TODO очистить текст от назойливого вайна парсимых сайтов
                 return $result;
             }
         }
